@@ -1,12 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css"  type="text/css" rel="stylesheet">
-    <title>Test Portfolio</title>
+    <!-- BOOT STRAP CSS LINK -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- GOOGLE FONT LINK -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Sans:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- MY CSS LINKS -->
+    <!-- <link href="index.css" type="text/css" rel="stylesheet"> -->
+    <link href="CSS_portfolio/main.css" type="text/css" rel="stylesheet">
+    <title>John Jester Portfolio</title>
 </head>
+
 <body>
-    <script src="index.js"></script>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">John Jester</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="nav-content">
+                <li class="nav-item active">
+                    <a class="nav-link li-tag" href="#landing-section">About Me <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link li-tag"  href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link li-tag" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  li-tag" href="#contact-us" tabindex="-1">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <section id="landing-section">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">John Jester</h1>
+                <p class="lead">Web Developer & JavaScript Programmer
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about-padding">
+        <div class="container text-center">
+            <h2 class="">About Me</h2>
+        </div>
+        <div class="container text-center">
+            <p>
+                Hello there, My name is John Jester. I am currently a student at Eleven Fifty Academy.
+                I am goal oriented and driven to succeed.
+                I am passionate about about my visions and always wanting to learn new things.
+                I started my journey down IT in networking and communication,
+                my desire to challenge myself and learn new things led me to a coding bootcamp done by eleven fifty
+                I was hooked on on it, I loved the problem solving aspect and how there was always some thing new to
+                learn.
+                You can find more information about me on my LinkdIn. 
+        </div>
+        </p>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="section-padding">
+        <div class="container text-center">
+            <h2>Skills</h2>
+        </div>
+        <!-- BOOTSTRAP -->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/html-logo.png"/>
+              </div>
+              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/js-logo.png"/>
+              </div>
+              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/css-logo.jpeg"/>
+              </div>
+            </div>
+          </div>
+          
+          <!-- MY CSS --> 
+        <!-- <div class="skills">
+                <div class="icon">HTML & CSS</div>
+                
+                <h5 class="icon2">JavaScript</h5>
+        </div> -->
+    </section>
+    
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="sectio-padding">
+        <div class="container text-center">
+            <h2 class="">Projects</h2>
+        </div>
+
+        <!-- BOOTSTRAP CARDS -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="CSS_portfolio/CSS-creature.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML/CSS Egg Head</h5>
+                        <p class="card-text">An Early Rendition Of My HTML/CSS Skills</p>
+                        <a href="https://codepen.io/Johnjstr/pen/GRpzBVL" class="btn btn-primary"
+                            target="_blank">View on Codepen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="CSS_portfolio/hulu.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Static Layout</h5>
+                        <p class="card-text">My Static Layout On Hulu</p>
+                        <a href="https://johnjstr.github.io/StaticLayout-WDgold/" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="CSS_portfolio/spaceX.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SpaceX Library</h5>
+                    <p class="card-text">View Images From The SpaceX API</p>
+                    <a href="https://johnjstr.github.io/WD_SpaceX_API/" target="_blank" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="CSS_portfolio/weather.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Weather App</h5>
+                    <p class="card-text">A Dynamic Weather App I Made That Allows You To Search For Weather By City & State</p>
+                    <a href="#" class="btn btn-primary">View on Firebase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="CSS_portfolio/badges-webdev_blue.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Future Blue Badge Project</h5>
+                    <p class="card-text">Future Blue Badge Work Will Go Here</p>
+                    <a href="#" target="_blank" class="btn btn-primary">TBD</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="CSS_portfolio/badges-webdev_red.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Future Red Badge Project</h5>
+                    <p class="card-text">Future Red Badge Work Will Go Here</p>
+                    <a href="#" target="_blank" class="btn btn-primary">TBD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- OLD PROJECTS SECTION
+        <div class="container">
+            <div class="portfolio-item java" style="position: absolute;">
+                <div class="portfolio-box">
+                    <a href="https://johnjstr.github.io/staticLayout-WDgold/">Static Layout</a>
+                    <div class="portfolio-image-wrap">
+                        <img src="SL_portfolio.jpeg" alt="">
+                        <a href="https://codepen.io/Johnjstr/pen/GRpzBVL">Creature Project</a>
+                        <a href="https://console.firebase.google.com/project/johnjstr-sw-api/overview">API Project</a>
+                        <!-- <ul class="portfolio-filter categories-filter">
+                <li><a href="https://johnjstr.github.io/staticLayout-WDgold/"></a>Static Layout</li>
+                <li><a class="categories"></a>JavaScript</li>
+            </ul> --> 
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact-us" class="section-padding">
+        <div class="container text-center">
+            <h2 class="">Contact</h2>
+            <a href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank">Download My Resume</a>
+            <br>
+            <a href="https://www.linkedin.com/in/john-jester-381b8a16a/" target="_blank"> My LinkdIn</a>
+        </div>
+        <div class="row"></div>
+        <div class="col-md-12">
+
+            <!-- BOOTSTRAP LAYOUT -->
+            <!-- <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">This is a column</div>
+                <div class="col">This is a column</div>
+                <div class="col">This is a column</div>
+            </div>
+            <div class="row">
+                <div class="col">This is another column</div>
+            </div>
+        </div>
+    </section> -->
+
+            <section id="contact">
+                <div class="container">
+                    <!-- modify this form HTML and place wherever you want your form -->
+
+                    <form action="https://formspree.io/xknqzkgw" method="POST">
+                        <div class="form-group">
+                            <input id="name" class="form-control" type="text" placeholder="Your Name" required=""
+                                data-validation-required-messages="Please Enter Your Name" name="name">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" class="form-control" type="email" placeholder="Your Email" required=""
+                                data-validation-required-message="Please Enter Your Email" name="replyto">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="7" placeholder="Your Message" required=""
+                                data-validation-required-message="Please leave a message" name="message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="text-center">
+                            <div id="success"></div>
+                            <button class="submit" type="submit">Submit</button>
+                        </div>
+                        <!-- <label>
+                  Your email:
+                  <input type="text" name="_replyto">
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message"></textarea>
+                </label>
+              
+                <!-- your other form fields go here -->
+
+                    </form>
+                </div>
+            </section>
+
+            <!-- BOOT STRAP SCRIPT TAG -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+            <!-- MY JAVASCRIPT LINK -->
+            <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,19 @@
+#nav-content {
+    margin-left: 75%;
+    
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: +10;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 60 px;
+}

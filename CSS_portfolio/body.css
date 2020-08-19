@@ -1,0 +1,53 @@
+body {
+    background-image: url('port1.jpg');
+    background-size: cover;
+    font-family: var(--font-one);
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    margin: 2% auto;
+    
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 15%;
+    background-size: cover;
+}
+
+#skills {
+    margin-top: 15vh;
+}
+
+#projects {
+    margin-top: 15vh;
+}
+
+#contact-us {
+    margin-top: 15vh;
+}
+
+.submit {
+    border-radius: 8px solid black;
+    font-size: 24px;
+}
+
+#about {
+    font-size: 24px;
+}
+
+.col-sm {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
