@@ -1,53 +1,71 @@
 body {
-    background-image: url('port1.jpg');
-    background-size: cover;
-    font-family: var(--font-one);
+  background-image: url('port1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  font-family: var(--font-one);
 }
 
 .wrapper {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card {
-    margin: 2% auto;
-    
+  margin: 2% auto;
 }
 
 .row {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
-    width: 15%;
-    background-size: cover;
+  width: 15%;
+  background-size: cover;
 }
 
 #skills {
-    margin-top: 15vh;
+  margin-top: 15vh;
 }
 
 #projects {
-    margin-top: 15vh;
+  margin-top: 15vh;
 }
 
 #contact-us {
-    margin-top: 15vh;
+  margin-top: 15vh;
 }
 
 .submit {
-    border-radius: 8px solid black;
-    font-size: 24px;
+  border-radius: 8px solid black;
+  font-size: 24px;
 }
 
 #about {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .col-sm {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  background-color: lightgray;
+  border-radius: 8px solid black;
+  color: white;
+  padding: 14px 25px;
+  margin: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: lightskyblue;
 }
