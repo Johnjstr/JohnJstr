@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A keyless weather and air-quality app built on the Open-Meteo API with vanilla HTML, CSS, and JavaScript.">
+    <title>Weather App &middot; Open-Meteo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        <header class="app__header">
+            <h1 class="app__title">Weather &amp; Air Quality</h1>
+            <p class="app__subtitle">Search any city. No API key required &mdash; powered by
+                <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a>.
+            </p>
+        </header>
+
+        <form id="search-form" class="search" autocomplete="off">
+            <div class="search__fields">
+                <label class="field">
+                    <span class="field__label">City <span aria-hidden="true">*</span></span>
+                    <input id="city" name="city" class="field__input" type="text" placeholder="e.g. Austin" required>
+                </label>
+                <label class="field">
+                    <span class="field__label">State / Country <span class="field__hint">(optional)</span></span>
+                    <input id="region" name="region" class="field__input" type="text" placeholder="e.g. Texas">
+                </label>
+            </div>
+            <div class="search__actions">
+                <div class="unit-toggle" role="group" aria-label="Temperature units">
+                    <button type="button" class="unit-toggle__btn is-active" data-unit="fahrenheit">&deg;F</button>
+                    <button type="button" class="unit-toggle__btn" data-unit="celsius">&deg;C</button>
+                </div>
+                <button type="submit" class="btn-primary">Get Weather</button>
+            </div>
+        </form>
+
+        <section id="status" class="status" aria-live="polite" hidden></section>
+
+        <section id="result" class="result" hidden>
+            <div class="result__head">
+                <div>
+                    <h2 id="location-name" class="result__location"></h2>
+                    <p id="observed-at" class="result__meta"></p>
+                </div>
+                <div class="result__now">
+                    <span id="weather-icon" class="result__icon" aria-hidden="true"></span>
+                    <div>
+                        <p id="temperature" class="result__temp"></p>
+                        <p id="weather-desc" class="result__desc"></p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="metrics">
+                <li class="metric">
+                    <span class="metric__label">Feels like</span>
+                    <span id="feels-like" class="metric__value">&mdash;</span>
+                </li>
+                <li class="metric">
+                    <span class="metric__label">Humidity</span>
+                    <span id="humidity" class="metric__value">&mdash;</span>
+                </li>
+                <li class="metric">
+                    <span class="metric__label">Wind</span>
+                    <span id="wind" class="metric__value">&mdash;</span>
+                </li>
+                <li class="metric">
+                    <span class="metric__label">Precipitation</span>
+                    <span id="precipitation" class="metric__value">&mdash;</span>
+                </li>
+                <li class="metric metric--aqi">
+                    <span class="metric__label">Air Quality (US AQI)</span>
+                    <span id="aqi" class="metric__value">&mdash;</span>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="app__footer">
+            <p>Weather &amp; air-quality data by
+                <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo.com</a>
+                (CC BY 4.0). No account or API key needed.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
