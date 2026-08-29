@@ -4,10 +4,30 @@
     border-bottom: 4px solid var(--purpleHaze);
 }
 
-.about__text {
+.about__content {
     max-width: 44rem;
     margin: 0 auto;
     text-align: center;
+}
+
+.about__text {
     font-size: 1.125rem;
     color: var(--text-muted);
+    margin-bottom: var(--space-md);
+}
+
+.about__focus {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    background: rgba(95, 242, 255, 0.12);
+    border: 1px solid rgba(95, 242, 255, 0.35);
+    color: var(--text-primary);
+    font-size: 0.9875rem;
+    line-height: 1.55;
+    text-align: left;
+}
+
+.about__focus strong {
+    color: var(--blue);
 }

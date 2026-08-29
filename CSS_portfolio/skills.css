@@ -1,0 +1,91 @@
+.skills {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.skills__foundations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.skills__foundation-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: rgba(217, 255, 230, 0.75);
+    border: 1px solid rgba(25, 21, 255, 0.12);
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 0.9375rem;
+}
+
+.skills__foundation-item img {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+}
+
+.skills__groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: var(--space-md);
+}
+
+.skills__group {
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(25, 21, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(25, 21, 255, 0.06);
+}
+
+.skills__group-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: var(--space-sm);
+}
+
+.skills__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills__tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(211, 199, 255, 0.35);
+    border: 1px solid rgba(218, 184, 255, 0.55);
+}
+
+.skills__group:nth-child(1) .skills__tag {
+    background: rgba(95, 242, 255, 0.2);
+    border-color: rgba(95, 242, 255, 0.5);
+}
+
+.skills__group:nth-child(2) .skills__tag {
+    background: rgba(148, 255, 175, 0.28);
+    border-color: rgba(148, 255, 175, 0.55);
+}
+
+.skills__group:nth-child(3) .skills__tag {
+    background: rgba(255, 157, 18, 0.18);
+    border-color: rgba(255, 157, 18, 0.45);
+}
+
+.skills__group:nth-child(4) .skills__tag {
+    background: rgba(211, 199, 255, 0.35);
+    border-color: rgba(218, 184, 255, 0.55);
+}
