@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="To-Do list app illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1915FF"/>
+      <stop offset="1" stop-color="#1A62FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+  <rect x="90" y="45" width="220" height="170" rx="14" fill="#ffffff"/>
+  <rect x="110" y="66" width="120" height="14" rx="7" fill="#1915FF"/>
+  <g fill="none" stroke="#1A62FF" stroke-width="4">
+    <rect x="112" y="104" width="20" height="20" rx="5" fill="#1A62FF"/>
+    <rect x="112" y="140" width="20" height="20" rx="5" fill="#1A62FF"/>
+    <rect x="112" y="176" width="20" height="20" rx="5"/>
+  </g>
+  <path d="M116 114 l4 4 l8 -9" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116 150 l4 4 l8 -9" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="146" y="107" width="140" height="12" rx="6" fill="#D9FFE6"/>
+  <rect x="146" y="143" width="120" height="12" rx="6" fill="#D9FFE6"/>
+  <rect x="146" y="179" width="150" height="12" rx="6" fill="#e6e9ff"/>
+  <text x="200" y="242" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.9">To-Do List App</text>
+</svg>

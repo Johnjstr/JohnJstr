@@ -1,6 +1,7 @@
 .jumbotron {
-    background: url(/Challenges/Projects/Assests/nasa-rTZW4f02zY8-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('portfolio2.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
 }
