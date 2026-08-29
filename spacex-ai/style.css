@@ -1,0 +1,138 @@
+:root {
+    --blue: #1915FF;
+    --lightBlue: #1A62FF;
+    --cyan: #5FF2FF;
+    --gold: #FF9D12;
+    --yellow: #ADFF15;
+    --bg-deep: #0a0833;
+    --text-on-dark: #f8fffb;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    color: var(--text-on-dark);
+    background:
+        linear-gradient(135deg, rgba(25, 21, 255, 0.9) 0%, rgba(10, 8, 51, 0.95) 60%, rgba(255, 157, 18, 0.25) 100%),
+        url('../CSS_portfolio/spaceX.png') center / cover no-repeat fixed;
+}
+
+.landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.landing__back {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.landing__back:hover {
+    color: var(--yellow);
+}
+
+.landing__header {
+    max-width: 36rem;
+    margin-bottom: 2rem;
+}
+
+.landing__eyebrow {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(95, 242, 255, 0.14);
+    border: 1px solid rgba(95, 242, 255, 0.45);
+    color: var(--cyan);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.landing__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 800;
+    margin: 0 0 1rem;
+    letter-spacing: -0.03em;
+}
+
+.landing__lead {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: rgba(248, 255, 251, 0.88);
+    margin: 0;
+}
+
+.landing__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--bg-deep);
+    border-color: var(--gold);
+}
+
+.btn-primary:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-on-dark);
+    border-color: rgba(248, 255, 251, 0.45);
+}
+
+.btn-secondary:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn:hover {
+        transform: none;
+    }
+}
