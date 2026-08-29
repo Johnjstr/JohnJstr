@@ -1,0 +1,13 @@
+.about {
+    background: var(--bg-surface);
+    border-top: 4px solid var(--cyan);
+    border-bottom: 4px solid var(--purpleHaze);
+}
+
+.about__text {
+    max-width: 44rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--text-muted);
+}

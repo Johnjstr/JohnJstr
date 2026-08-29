@@ -1,7 +1,87 @@
-.jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('portfolio2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
+.hero {
+    position: relative;
+    min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    align-items: center;
+    padding: var(--space-xl) var(--space-md);
+    background:
+        linear-gradient(135deg, rgba(25, 21, 255, 0.88) 0%, rgba(255, 26, 228, 0.55) 52%, rgba(10, 8, 51, 0.92) 100%),
+        url('portfolio2.jpg') center / cover no-repeat;
+    color: var(--text-on-dark);
+}
+
+.hero__content {
+    width: min(100%, var(--max-width));
+    margin: 0 auto;
+    max-width: 44rem;
+}
+
+.hero__eyebrow {
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(95, 242, 255, 0.14);
+    border: 1px solid rgba(95, 242, 255, 0.45);
+    color: var(--cyan);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-sm);
+    color: var(--text-on-dark);
+}
+
+.hero__title span {
+    color: var(--yellow);
+}
+
+.hero__lead {
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    max-width: 36rem;
+    color: rgba(248, 255, 251, 0.9);
+    margin-bottom: var(--space-lg);
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.hero__actions .btn-primary {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--bg-deep);
+}
+
+.hero__actions .btn-primary:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--bg-deep);
+}
+
+.hero__actions .btn-secondary {
+    color: var(--text-on-dark);
+    border-color: rgba(248, 255, 251, 0.45);
+}
+
+.hero__actions .btn-secondary:hover {
+    background: rgba(248, 255, 251, 0.08);
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+@media (max-width: 640px) {
+    .hero {
+        min-height: auto;
+        padding-top: var(--space-2xl);
+        padding-bottom: var(--space-2xl);
+    }
 }
