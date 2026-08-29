@@ -1,16 +1,38 @@
 :root {
-    --blue:  #1915FF;
+    --blue: #1915FF;
     --lightBlue: #1A62FF;
     --cyan: #5FF2FF;
     --yellow: #ADFF15;
     --gold: #FF9D12;
     --lightGreen: #94FFAF;
     --silver: #D9FFE6;
-    --purpleHaze:  #D3C7FF;
+    --purpleHaze: #D3C7FF;
     --purple: #FF1AE4;
-    --rhino:  #DAB8FF;
+    --rhino: #DAB8FF;
 
-    --font-one: 'PT Sans', sans-serif;
-    --font-two: 'PT Sans', sans-serif;
+    --bg-deep: #0a0833;
+    --bg-surface: rgba(217, 255, 230, 0.92);
+    --text-primary: #0a0833;
+    --text-on-dark: #f8fffb;
+    --text-muted: #2a2858;
+
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+
+    --shadow-card: 0 12px 40px rgba(25, 21, 255, 0.12);
+    --shadow-nav: 0 4px 24px rgba(10, 8, 51, 0.18);
+
+    --max-width: 72rem;
+    --nav-height: 4.25rem;
 }
-

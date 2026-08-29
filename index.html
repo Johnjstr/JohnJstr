@@ -4,278 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOT STRAP CSS LINK -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- GOOGLE FONT LINK -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Sans:ital@1&display=swap"
-        rel="stylesheet">
-    <!-- MY CSS LINKS -->
-    <!-- <link href="index.css" type="text/css" rel="stylesheet"> -->
+    <meta name="description" content="John Jester — Software Engineer portfolio showcasing web projects and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="CSS_portfolio/main.css" type="text/css" rel="stylesheet">
     <title>John Jester Portfolio</title>
 </head>
 
 <body>
-    <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">John Jester</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" id="nav-content">
-                <li class="nav-item active">
-                    <a class="nav-link li-tag" href="#landing-section">About Me <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link li-tag"  href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link li-tag" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  li-tag" href="#contact-us" tabindex="-1">Contact Me</a>
-                </li>
+    <header class="site-nav">
+        <div class="container site-nav__inner">
+            <a class="site-nav__brand" href="#landing-section">John Jester</a>
+            <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-menu" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="site-nav__links" id="site-nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </header>
 
-    <!-- JUMBOTRON -->
-    <section id="landing-section">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">John Jester</h1>
-                <p class="lead">Software Engineer
-                </p>
+    <section id="landing-section" class="hero">
+        <div class="hero__content">
+            <p class="hero__eyebrow">Software Engineer</p>
+            <h1 class="hero__title">John <span>Jester</span></h1>
+            <p class="hero__lead">
+                Building thoughtful web experiences with modern JavaScript, clean UI, and a problem-solver's mindset.
+            </p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact-us" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT ME -->
-    <section id="about" class="about-padding">
-        <div class="container text-center">
-            <h2 class="">About Me</h2>
-        </div>
-        <div class="container text-center">
-            <p>
-                Hello there, My name is John Jester and I'm a Software Engineer.
-                I have experience building apps using both PERN stack and MEAN stack development methods.
-                I am passionate about about my visions and always wanting to learn new things.
-                I started my journey down IT in networking and communication,
-                my desire to challenge myself and learn new things led me to a coding bootcamp.
-                I was hooked on on it, I loved the problem solving aspect and how there was always some thing new to
-                learn.
-        </div>
-        </p>
-    </section>
-
-
-    <!-- SKILLS -->
-
-    <section id="skills" class="section-padding">
-        <div class="container text-center">
-            <h2>Skills</h2>
-        </div>
-        <!-- BOOTSTRAP -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="row">
-              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/html-logo.png"/>
-              </div>
-              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/js-logo.png"/>
-              </div>
-              <div class="col-sm"> <img height="100rem" src="CSS_portfolio/css-logo.jpeg"/>
-              </div>
+            <div class="section-intro">
+                <h2>About Me</h2>
             </div>
-          </div>
-          
-          <!-- MY CSS --> 
-        <!-- <div class="skills">
-                <div class="icon">HTML & CSS</div>
-                
-                <h5 class="icon2">JavaScript</h5>
-        </div> -->
-    </section>
-    
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="sectio-padding">
-        <div class="container text-center">
-            <h2 class="">Projects</h2>
+            <p class="about__text">
+                Hello there — I'm John Jester, a Software Engineer with experience building apps across PERN and MEAN stacks.
+                I started in networking and communications, then found my way into development through a coding bootcamp and never looked back.
+                I'm passionate about learning, solving hard problems, and turning ideas into polished, usable software.
+            </p>
         </div>
+    </section>
 
-        <!-- BOOTSTRAP CARDS -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="CSS_portfolio/CSS-creature.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML/CSS Egg Head</h5>
-                        <p class="card-text">An Early Rendition Of My HTML/CSS Skills</p>
-                        <a href="https://codepen.io/Johnjstr/pen/GRpzBVL" class="btn btn-primary"
-                            target="_blank">View on Codepen</a>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Skills</h2>
+                <p>Core front-end foundations I build on every day.</p>
+            </div>
+            <div class="skills__grid">
+                <div class="skills__item">
+                    <img src="CSS_portfolio/html-logo.png" alt="HTML logo">
+                    <span class="skills__label">HTML</span>
+                </div>
+                <div class="skills__item">
+                    <img src="CSS_portfolio/js-logo.png" alt="JavaScript logo">
+                    <span class="skills__label">JavaScript</span>
+                </div>
+                <div class="skills__item">
+                    <img src="CSS_portfolio/css-logo.jpeg" alt="CSS logo">
+                    <span class="skills__label">CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Projects</h2>
+                <p>A selection of work — from early experiments to recent rebuilds.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card__media">
+                        <img src="CSS_portfolio/CSS-creature.png" alt="HTML/CSS Egg Head project preview">
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="CSS_portfolio/hulu.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Static Layout</h5>
-                        <p class="card-text">My Static Layout On Hulu</p>
-                        <a href="https://johnjstr.github.io/StaticLayout-WDgold/" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="status status--external">CodePen</span>
+                        </div>
+                        <h3 class="project-card__title">HTML/CSS Egg Head</h3>
+                        <p class="project-card__text">An early rendition of my HTML and CSS skills — a playful creature built from pure markup and styling.</p>
+                        <div class="project-card__actions">
+                            <a href="https://codepen.io/Johnjstr/pen/GRpzBVL" class="btn btn-primary" target="_blank" rel="noopener">View on CodePen</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-                <img src="CSS_portfolio/spaceX.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">SpaceX Library</h5>
-                    <p class="card-text">View Images From The SpaceX API</p>
-                    <a href="https://johnjstr.github.io/WD_SpaceX_API/" target="_blank" class="btn btn-primary">View on GitHub</a>
-                </div>
-            </div>
-        </div>
+                </article>
 
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-                <img src="CSS_portfolio/weather.jpg" class="card-img-top" alt="Weather app preview">
-                <div class="card-body">
-                    <h5 class="card-title">Weather App</h5>
-                    <p class="card-text">Search current weather and air quality by city. Rebuilt on the keyless Open-Meteo API (no exposed API keys) with vanilla HTML, CSS &amp; JavaScript.</p>
-                    <a href="weather-app/" class="btn btn-primary">View Here</a>
-                </div> 
-            </div>
-        </div>
-    </div>
-        
-        <div class="row">
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-                <img src="CSS_portfolio/todo-archived.svg" class="card-img-top" alt="To-Do list app illustration">
-                <div class="card-body">
-                    <h5 class="card-title">To-Do list App</h5>
-                    <p class="card-text">PERN stack app with full CRUD, token validation, and regex form validation. Originally deployed on Heroku (now archived after Heroku retired its free tier).</p>
-                    <span class="btn btn-secondary disabled" aria-disabled="true">Archived</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-                <img src="CSS_portfolio/badges-webdev_red.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Future Red Badge Project</h5>
-                    <p class="card-text">Future Red Badge Work Will Go Here</p>
-                    <a href="#" target="_blank" class="btn btn-primary">TBD</a>
-                </div>
-            </div>
-        </div> -->
-    </div>
-</div>
+                <article class="project-card">
+                    <div class="project-card__media">
+                        <img src="CSS_portfolio/hulu.png" alt="Static Layout project preview">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="status status--external">GitHub Pages</span>
+                        </div>
+                        <h3 class="project-card__title">Static Layout</h3>
+                        <p class="project-card__text">A responsive static layout inspired by Hulu — built during my web development training.</p>
+                        <div class="project-card__actions">
+                            <a href="https://johnjstr.github.io/StaticLayout-WDgold/" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- OLD PROJECTS SECTION
-        <div class="container">
-            <div class="portfolio-item java" style="position: absolute;">
-                <div class="portfolio-box">
-                    <a href="https://johnjstr.github.io/staticLayout-WDgold/">Static Layout</a>
-                    <div class="portfolio-image-wrap">
-                        <img src="SL_portfolio.jpeg" alt="">
-                        <a href="https://codepen.io/Johnjstr/pen/GRpzBVL">Creature Project</a>
-                        <a href="https://console.firebase.google.com/project/johnjstr-sw-api/overview">API Project</a>
-                        <!-- <ul class="portfolio-filter categories-filter">
-                <li><a href="https://johnjstr.github.io/staticLayout-WDgold/"></a>Static Layout</li>
-                <li><a class="categories"></a>JavaScript</li>
-            </ul> --> 
+                <article class="project-card">
+                    <div class="project-card__media">
+                        <img src="CSS_portfolio/spaceX.png" alt="SpaceX Library project preview">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="status status--external">GitHub Pages</span>
+                        </div>
+                        <h3 class="project-card__title">SpaceX Library</h3>
+                        <p class="project-card__text">Browse images from the SpaceX API — an early JavaScript project exploring third-party data.</p>
+                        <div class="project-card__actions">
+                            <a href="https://johnjstr.github.io/WD_SpaceX_API/" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__media">
+                        <img src="CSS_portfolio/weather.jpg" alt="Weather app preview">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="status status--live">Live</span>
+                        </div>
+                        <h3 class="project-card__title">Weather App</h3>
+                        <p class="project-card__text">Search current weather and air quality by city. Rebuilt on the keyless Open-Meteo API with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-card__actions">
+                            <a href="weather-app/" class="btn btn-primary">View Here</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__media">
+                        <img src="CSS_portfolio/todo-archived.svg" alt="To-Do list app illustration">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="status status--archived">Archived</span>
+                        </div>
+                        <h3 class="project-card__title">To-Do List App</h3>
+                        <p class="project-card__text">PERN stack app with full CRUD, token validation, and regex form validation. Originally deployed on Heroku (now archived after the free tier ended).</p>
+                        <div class="project-card__actions">
+                            <span class="btn btn-secondary disabled" aria-disabled="true">Unavailable</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
-
-    <!-- CONTACT -->
-    <section id="contact-us" class="section-padding">
-        <div class="container text-center">
-            <h2 class="">Contact</h2>
-            <a href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank">Download My Resume</a>
-            <br>
-            <a href="https://www.linkedin.com/in/john-jester-381b8a16a/" target="_blank"> My LinkdIn</a>
-        </div>
-        <div class="row"></div>
-        <div class="col-md-12">
-
-            <!-- BOOTSTRAP LAYOUT -->
-            <!-- <section>
+    <section id="contact-us" class="contact">
         <div class="container">
-            <div class="row">
-                <div class="col">This is a column</div>
-                <div class="col">This is a column</div>
-                <div class="col">This is a column</div>
+            <div class="section-intro">
+                <h2>Contact</h2>
+                <p>Reach out for opportunities, collaboration, or just to say hello.</p>
             </div>
-            <div class="row">
-                <div class="col">This is another column</div>
+
+            <div class="contact__links">
+                <a class="contact__link" href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank" rel="noopener">Download Resume</a>
+                <a class="contact__link" href="https://www.linkedin.com/in/john-jester-381b8a16a/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
-        </div>
-    </section> -->
 
-            <section id="contact">
-                <div class="container">
-                    <!-- modify this form HTML and place wherever you want your form -->
-
-                    <form action="https://formspree.io/xknqzkgw" method="POST">
-                        <div class="form-group">
-                            <input id="name" class="form-control" type="text" placeholder="Your Name" required=""
-                                data-validation-required-messages="Please Enter Your Name" name="name">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                            <input id="email" class="form-control" type="email" placeholder="Your Email" required=""
-                                data-validation-required-message="Please Enter Your Email" name="replyto">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" class="form-control" rows="7" placeholder="Your Message" required=""
-                                data-validation-required-message="Please leave a message" name="message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-
-                        <div class="text-center">
-                            <div id="success"></div>
-                            <button class="submit" type="submit">Submit</button>
-                        </div>
-                        <!-- <label>
-                  Your email:
-                  <input type="text" name="_replyto">
-                </label>
-                <label>
-                  Your message:
-                  <textarea name="message"></textarea>
-                </label>
-              
-                <!-- your other form fields go here -->
-
-                    </form>
+            <form class="contact-form" action="https://formspree.io/xknqzkgw" method="POST">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
                 </div>
-            </section>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="replyto" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <div class="contact-form__actions">
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-            <!-- BOOT STRAP SCRIPT TAG -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-            <!-- MY JAVASCRIPT LINK -->
-            <script src="index.js"></script>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> John Jester. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

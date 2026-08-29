@@ -1,0 +1,11 @@
+.site-footer {
+    padding: var(--space-lg) var(--space-md);
+    text-align: center;
+    background: var(--bg-deep);
+    color: rgba(248, 255, 251, 0.75);
+    font-size: 0.875rem;
+}
+
+.site-footer span {
+    color: var(--cyan);
+}

@@ -1,19 +1,99 @@
-#nav-content {
-    margin-left: 75%;
-    
-}
-
-.sticky {
+.site-nav {
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: +10;
+    z-index: 100;
+    height: var(--nav-height);
+    background: rgba(10, 8, 51, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(95, 242, 255, 0.2);
+    box-shadow: var(--shadow-nav);
 }
 
-.content {
-    padding: 16px;
+.site-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--space-md);
 }
 
-.sticky + .content {
-    padding-top: 60 px;
+.site-nav__brand {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--cyan);
+    letter-spacing: 0.02em;
+}
+
+.site-nav__brand:hover {
+    color: var(--yellow);
+}
+
+.site-nav__toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(95, 242, 255, 0.45);
+    color: var(--text-on-dark);
+    border-radius: var(--radius-sm);
+    padding: 0.45rem 0.65rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.site-nav__links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav__links a {
+    color: var(--text-on-dark);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    padding: 0.35rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.site-nav__links a:hover,
+.site-nav__links a.is-active {
+    color: var(--cyan);
+    border-bottom-color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .site-nav__toggle {
+        display: inline-flex;
+    }
+
+    .site-nav__links {
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(10, 8, 51, 0.97);
+        border-bottom: 1px solid rgba(95, 242, 255, 0.2);
+        padding: var(--space-sm) 0;
+        display: none;
+    }
+
+    .site-nav__links.is-open {
+        display: flex;
+    }
+
+    .site-nav__links li {
+        width: 100%;
+    }
+
+    .site-nav__links a {
+        display: block;
+        padding: 0.85rem var(--space-md);
+        border-bottom: none;
+    }
 }
