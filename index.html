@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="John Jester — Software Engineer portfolio showcasing web projects and contact information.">
+    <meta name="theme-color" content="#0a0833">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#about">Skip to content</a>
     <header class="site-nav">
         <div class="container site-nav__inner">
             <a class="site-nav__brand" href="#landing-section">John Jester</a>
@@ -67,17 +69,17 @@
                 <p>Foundations plus the stacks and tools I'm building with today.</p>
             </div>
 
-            <div class="skills__foundations reveal reveal-delay-1">
+            <div class="skills__foundations reveal reveal-delay-1" aria-label="Core web foundations">
                 <div class="skills__foundation-item">
-                    <img src="CSS_portfolio/html-logo.png" alt="">
+                    <img src="CSS_portfolio/html-logo.png" alt="" aria-hidden="true">
                     <span>HTML</span>
                 </div>
                 <div class="skills__foundation-item">
-                    <img src="CSS_portfolio/js-logo.png" alt="">
+                    <img src="CSS_portfolio/js-logo.png" alt="" aria-hidden="true">
                     <span>JavaScript</span>
                 </div>
                 <div class="skills__foundation-item">
-                    <img src="CSS_portfolio/css-logo.jpeg" alt="">
+                    <img src="CSS_portfolio/css-logo.jpeg" alt="" aria-hidden="true">
                     <span>CSS</span>
                 </div>
             </div>
@@ -132,8 +134,8 @@
 
             <div class="projects-grid">
                 <article class="project-card reveal reveal-delay-1">
-                    <div class="project-card__media">
-                        <img src="CSS_portfolio/CSS-creature.png" alt="HTML/CSS Egg Head project preview">
+                    <div class="project-card__media project-card__media--contain">
+                        <img src="CSS_portfolio/CSS-creature.png" alt="Colorful HTML and CSS creature illustration for the Egg Head CodePen project" loading="lazy" decoding="async">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -142,14 +144,14 @@
                         <h3 class="project-card__title">HTML/CSS Egg Head</h3>
                         <p class="project-card__text">An early rendition of my HTML and CSS skills — a playful creature built from pure markup and styling.</p>
                         <div class="project-card__actions">
-                            <a href="https://codepen.io/Johnjstr/pen/GRpzBVL" class="btn btn-primary" target="_blank" rel="noopener">View on CodePen</a>
+                            <a href="https://codepen.io/Johnjstr/pen/GRpzBVL" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on CodePen</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card reveal reveal-delay-2">
                     <div class="project-card__media">
-                        <img src="CSS_portfolio/hulu.png" alt="Static Layout project preview">
+                        <img src="CSS_portfolio/hulu.png" alt="Screenshot of a Hulu-inspired static layout homepage" loading="lazy" decoding="async">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -165,7 +167,7 @@
 
                 <article class="project-card reveal reveal-delay-3">
                     <div class="project-card__media">
-                        <img src="CSS_portfolio/spaceX.png" alt="SpaceX Library project preview">
+                        <img src="CSS_portfolio/spaceX.png" alt="Screenshot of the SpaceX Library app showing launch imagery from the API" loading="lazy" decoding="async">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -181,7 +183,7 @@
 
                 <article class="project-card reveal reveal-delay-1">
                     <div class="project-card__media">
-                        <img src="CSS_portfolio/weather.jpg" alt="Weather app preview">
+                        <img src="CSS_portfolio/weather.jpg" alt="Screenshot of the Open-Meteo weather and air quality search app" loading="lazy" decoding="async">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -196,8 +198,8 @@
                 </article>
 
                 <article class="project-card reveal reveal-delay-2">
-                    <div class="project-card__media">
-                        <img src="CSS_portfolio/todo-archived.svg" alt="To-Do list app illustration">
+                    <div class="project-card__media project-card__media--contain">
+                        <img src="CSS_portfolio/todo-archived.svg" alt="Illustration representing the archived PERN stack to-do list application" loading="lazy" decoding="async">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -222,11 +224,11 @@
             </div>
 
             <div class="contact__cards reveal reveal-delay-1">
-                <a class="contact__card" href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank" rel="noopener">
+                <a class="contact__card" href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <span class="contact__card-label">Resume</span>
                     <span class="contact__card-link">Download PDF</span>
                 </a>
-                <a class="contact__card" href="https://x.ai/" target="_blank" rel="noopener">
+                <a class="contact__card" href="https://x.ai/" target="_blank" rel="noopener noreferrer">
                     <span class="contact__card-label">Website</span>
                     <span class="contact__card-link">SpaceX AI</span>
                 </a>
@@ -235,21 +237,21 @@
             <div class="contact-form-panel reveal reveal-delay-2">
                 <h3 class="contact-form-panel__title">Send a Message</h3>
                 <form class="contact-form" action="https://formspree.io/xknqzkgw" method="POST">
-                <div class="form-field">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Your name" required>
-                </div>
-                <div class="form-field">
-                    <label for="email">Email</label>
-                    <input id="email" name="replyto" type="email" placeholder="you@example.com" required>
-                </div>
-                <div class="form-field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                </div>
-                <div class="contact-form__actions">
-                    <button class="btn btn-primary" type="submit">Send Message</button>
-                </div>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="replyto" type="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    </div>
+                    <div class="contact-form__actions">
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
