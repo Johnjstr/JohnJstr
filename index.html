@@ -22,7 +22,7 @@
             <ul class="site-nav__links" id="site-nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li class="site-nav__cta"><a href="#projects">Projects</a></li>
                 <li><a href="#contact-us">Contact</a></li>
             </ul>
         </div>
@@ -44,35 +44,80 @@
 
     <section id="about" class="about">
         <div class="container">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <h2>About Me</h2>
             </div>
-            <p class="about__text">
-                Hello there — I'm John Jester, a Software Engineer with experience building apps across PERN and MEAN stacks.
-                I started in networking and communications, then found my way into development through a coding bootcamp and never looked back.
-                I'm passionate about learning, solving hard problems, and turning ideas into polished, usable software.
-            </p>
+            <div class="about__content reveal reveal-delay-1">
+                <p class="about__text">
+                    I'm John Jester, a Software Engineer getting back into hands-on development after years in IT and networking.
+                    I build full-stack web apps with PERN and MEAN stacks, and I'm actively modernizing older projects while learning current tooling like Cursor.
+                </p>
+                <p class="about__focus">
+                    <strong>Currently focused on:</strong> polishing portfolio projects, strengthening JavaScript fundamentals,
+                    and shipping clean, accessible front-end experiences that show real progress — not just old bootcamp homework.
+                </p>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <h2>Skills</h2>
-                <p>Core front-end foundations I build on every day.</p>
+                <p>Foundations plus the stacks and tools I'm building with today.</p>
             </div>
-            <div class="skills__grid">
-                <div class="skills__item">
-                    <img src="CSS_portfolio/html-logo.png" alt="HTML logo">
-                    <span class="skills__label">HTML</span>
+
+            <div class="skills__foundations reveal reveal-delay-1">
+                <div class="skills__foundation-item">
+                    <img src="CSS_portfolio/html-logo.png" alt="">
+                    <span>HTML</span>
                 </div>
-                <div class="skills__item">
-                    <img src="CSS_portfolio/js-logo.png" alt="JavaScript logo">
-                    <span class="skills__label">JavaScript</span>
+                <div class="skills__foundation-item">
+                    <img src="CSS_portfolio/js-logo.png" alt="">
+                    <span>JavaScript</span>
                 </div>
-                <div class="skills__item">
-                    <img src="CSS_portfolio/css-logo.jpeg" alt="CSS logo">
-                    <span class="skills__label">CSS</span>
+                <div class="skills__foundation-item">
+                    <img src="CSS_portfolio/css-logo.jpeg" alt="">
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="skills__groups">
+                <div class="skills__group reveal reveal-delay-1">
+                    <h3 class="skills__group-title">Frontend</h3>
+                    <ul class="skills__tags">
+                        <li class="skills__tag">Responsive UI</li>
+                        <li class="skills__tag">Vanilla JS</li>
+                        <li class="skills__tag">Bootstrap</li>
+                        <li class="skills__tag">REST API integration</li>
+                    </ul>
+                </div>
+                <div class="skills__group reveal reveal-delay-2">
+                    <h3 class="skills__group-title">Backend</h3>
+                    <ul class="skills__tags">
+                        <li class="skills__tag">Node.js</li>
+                        <li class="skills__tag">Express</li>
+                        <li class="skills__tag">PostgreSQL</li>
+                        <li class="skills__tag">MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skills__group reveal reveal-delay-2">
+                    <h3 class="skills__group-title">Cloud &amp; Ops</h3>
+                    <ul class="skills__tags">
+                        <li class="skills__tag">Azure</li>
+                        <li class="skills__tag">Microsoft 365</li>
+                        <li class="skills__tag">Automation</li>
+                        <li class="skills__tag">Hybrid identity</li>
+                    </ul>
+                </div>
+                <div class="skills__group reveal reveal-delay-3">
+                    <h3 class="skills__group-title">Tools</h3>
+                    <ul class="skills__tags">
+                        <li class="skills__tag">Git &amp; GitHub</li>
+                        <li class="skills__tag">Cursor</li>
+                        <li class="skills__tag">Formspree</li>
+                        <li class="skills__tag">GitHub Pages</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -80,13 +125,13 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <h2>Projects</h2>
                 <p>A selection of work — from early experiments to recent rebuilds.</p>
             </div>
 
             <div class="projects-grid">
-                <article class="project-card">
+                <article class="project-card reveal reveal-delay-1">
                     <div class="project-card__media">
                         <img src="CSS_portfolio/CSS-creature.png" alt="HTML/CSS Egg Head project preview">
                     </div>
@@ -102,9 +147,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-card__media">
-                        <img src="CSS_portfolio/hulu.png" alt="Static Layout project preview">
+                <article class="project-card reveal reveal-delay-2">
                     </div>
                     <div class="project-card__body">
                         <div class="project-card__meta">
@@ -118,7 +161,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card reveal reveal-delay-3">
                     <div class="project-card__media">
                         <img src="CSS_portfolio/spaceX.png" alt="SpaceX Library project preview">
                     </div>
@@ -134,7 +177,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card reveal reveal-delay-1">
                     <div class="project-card__media">
                         <img src="CSS_portfolio/weather.jpg" alt="Weather app preview">
                     </div>
@@ -150,7 +193,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card reveal reveal-delay-2">
                     <div class="project-card__media">
                         <img src="CSS_portfolio/todo-archived.svg" alt="To-Do list app illustration">
                     </div>
@@ -171,17 +214,25 @@
 
     <section id="contact-us" class="contact">
         <div class="container">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <h2>Contact</h2>
                 <p>Reach out for opportunities, collaboration, or just to say hello.</p>
             </div>
 
-            <div class="contact__links">
-                <a class="contact__link" href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank" rel="noopener">Download Resume</a>
-                <a class="contact__link" href="https://www.linkedin.com/in/john-jester-381b8a16a/" target="_blank" rel="noopener">LinkedIn</a>
+            <div class="contact__cards reveal reveal-delay-1">
+                <a class="contact__card" href="https://drive.google.com/file/d/1_WzuMqN4Y57DXdPzn9CxMFJQL2Cc3zpf/view?usp=sharing" target="_blank" rel="noopener">
+                    <span class="contact__card-label">Resume</span>
+                    <span class="contact__card-link">Download PDF</span>
+                </a>
+                <a class="contact__card" href="https://www.linkedin.com/in/john-jester-381b8a16a/" target="_blank" rel="noopener">
+                    <span class="contact__card-label">Social</span>
+                    <span class="contact__card-link">LinkedIn Profile</span>
+                </a>
             </div>
 
-            <form class="contact-form" action="https://formspree.io/xknqzkgw" method="POST">
+            <div class="contact-form-panel reveal reveal-delay-2">
+                <h3 class="contact-form-panel__title">Send a Message</h3>
+                <form class="contact-form" action="https://formspree.io/xknqzkgw" method="POST">
                 <div class="form-field">
                     <label for="name">Name</label>
                     <input id="name" name="name" type="text" placeholder="Your name" required>
@@ -197,7 +248,8 @@
                 <div class="contact-form__actions">
                     <button class="btn btn-primary" type="submit">Send Message</button>
                 </div>
-            </form>
+                </form>
+            </div>
         </div>
     </section>
 
