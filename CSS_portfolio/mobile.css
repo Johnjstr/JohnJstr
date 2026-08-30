@@ -1,0 +1,77 @@
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: var(--space-sm);
+    z-index: 200;
+    padding: 0.75rem 1rem;
+    background: var(--gold);
+    color: var(--bg-deep);
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+}
+
+.skip-link:focus {
+    top: var(--space-sm);
+}
+
+:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 2px;
+}
+
+.btn:focus-visible,
+.site-nav__links a:focus-visible,
+.contact__card:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .btn {
+        min-height: 2.75rem;
+        padding: 0.85rem 1.35rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 1rem;
+        min-height: 2.75rem;
+    }
+
+    .form-field textarea {
+        min-height: 9.5rem;
+    }
+
+    .site-nav__toggle {
+        min-width: 2.75rem;
+        min-height: 2.75rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-panel {
+        padding: var(--space-md);
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-nav__links a {
+        min-height: 2.75rem;
+        display: flex;
+        align-items: center;
+    }
+}
