@@ -1,20 +1,22 @@
 :root {
-    --blue: #1915FF;
-    --lightBlue: #1A62FF;
-    --cyan: #5FF2FF;
-    --yellow: #ADFF15;
-    --gold: #FF9D12;
-    --lightGreen: #94FFAF;
-    --silver: #D9FFE6;
-    --purpleHaze: #D3C7FF;
-    --purple: #FF1AE4;
-    --rhino: #DAB8FF;
+    /* Tokyo Night — brand accents */
+    --blue: #5b8cff;
+    --lightBlue: #7aa2ff;
+    --cyan: #67e8f9;
+    --yellow: #ffb3d1;
+    --gold: #ff7eb6;
+    --lightGreen: #7dd3c7;
+    --silver: #c5d0f0;
+    --purpleHaze: #b8a6ff;
+    --purple: #e879f9;
+    --rhino: #d4c4ff;
 
-    --bg-deep: #0a0833;
-    --bg-surface: rgba(217, 255, 230, 0.92);
-    --text-primary: #0a0833;
-    --text-on-dark: #f8fffb;
-    --text-muted: #2a2858;
+    /* Surfaces & type */
+    --bg-deep: #070b16;
+    --bg-surface: rgba(15, 21, 40, 0.88);
+    --text-primary: #eef2ff;
+    --text-on-dark: #eef2ff;
+    --text-muted: #9aa6c7;
 
     --font-display: 'Syne', sans-serif;
     --font-body: 'DM Sans', sans-serif;
@@ -30,8 +32,8 @@
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
 
-    --shadow-card: 0 12px 40px rgba(25, 21, 255, 0.12);
-    --shadow-nav: 0 4px 24px rgba(10, 8, 51, 0.18);
+    --shadow-card: 0 12px 40px rgba(7, 11, 22, 0.45);
+    --shadow-nav: 0 4px 24px rgba(7, 11, 22, 0.55);
 
     --max-width: 72rem;
     --nav-height: 4.25rem;

@@ -1,7 +1,7 @@
 .about {
     background: var(--bg-surface);
     border-top: 4px solid var(--cyan);
-    border-bottom: 4px solid var(--purpleHaze);
+    border-bottom: 4px solid var(--gold);
 }
 
 .about__content {
@@ -20,8 +20,8 @@
     display: inline-block;
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--radius-md);
-    background: rgba(95, 242, 255, 0.12);
-    border: 1px solid rgba(95, 242, 255, 0.35);
+    background: rgba(255, 126, 182, 0.1);
+    border: 1px solid rgba(255, 126, 182, 0.32);
     color: var(--text-primary);
     font-size: 0.9875rem;
     line-height: 1.55;
@@ -29,5 +29,5 @@
 }
 
 .about__focus strong {
-    color: var(--blue);
+    color: var(--gold);
 }
