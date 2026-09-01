@@ -1,5 +1,5 @@
 .skills {
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(15, 21, 40, 0.72);
 }
 
 .skills__foundations {
@@ -16,10 +16,10 @@
     gap: var(--space-xs);
     padding: 0.65rem 1rem;
     border-radius: 999px;
-    background: rgba(217, 255, 230, 0.75);
-    border: 1px solid rgba(25, 21, 255, 0.12);
+    background: rgba(103, 232, 249, 0.1);
+    border: 1px solid rgba(103, 232, 249, 0.28);
     font-weight: 600;
-    color: var(--blue);
+    color: var(--cyan);
     font-size: 0.9375rem;
 }
 
@@ -38,15 +38,15 @@
 .skills__group {
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(25, 21, 255, 0.1);
-    box-shadow: 0 8px 24px rgba(25, 21, 255, 0.06);
+    background: rgba(15, 21, 40, 0.78);
+    border: 1px solid rgba(184, 166, 255, 0.22);
+    box-shadow: 0 8px 24px rgba(7, 11, 22, 0.35);
 }
 
 .skills__group-title {
     font-family: var(--font-display);
     font-size: 1rem;
-    color: var(--blue);
+    color: var(--cyan);
     margin-bottom: var(--space-sm);
 }
 
@@ -66,26 +66,30 @@
     font-size: 0.8125rem;
     font-weight: 600;
     color: var(--text-muted);
-    background: rgba(211, 199, 255, 0.35);
-    border: 1px solid rgba(218, 184, 255, 0.55);
+    background: rgba(184, 166, 255, 0.14);
+    border: 1px solid rgba(184, 166, 255, 0.32);
 }
 
 .skills__group:nth-child(1) .skills__tag {
-    background: rgba(95, 242, 255, 0.2);
-    border-color: rgba(95, 242, 255, 0.5);
+    background: rgba(103, 232, 249, 0.12);
+    border-color: rgba(103, 232, 249, 0.35);
+    color: #c9f7ff;
 }
 
 .skills__group:nth-child(2) .skills__tag {
-    background: rgba(148, 255, 175, 0.28);
-    border-color: rgba(148, 255, 175, 0.55);
+    background: rgba(125, 211, 199, 0.12);
+    border-color: rgba(125, 211, 199, 0.35);
+    color: #c9f5ec;
 }
 
 .skills__group:nth-child(3) .skills__tag {
-    background: rgba(255, 157, 18, 0.18);
-    border-color: rgba(255, 157, 18, 0.45);
+    background: rgba(255, 126, 182, 0.12);
+    border-color: rgba(255, 126, 182, 0.35);
+    color: #ffd0e4;
 }
 
 .skills__group:nth-child(4) .skills__tag {
-    background: rgba(211, 199, 255, 0.35);
-    border-color: rgba(218, 184, 255, 0.55);
+    background: rgba(184, 166, 255, 0.14);
+    border-color: rgba(184, 166, 255, 0.35);
+    color: #ddd0ff;
 }

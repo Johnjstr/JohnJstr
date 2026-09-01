@@ -15,7 +15,7 @@ body {
     line-height: 1.65;
     color: var(--text-primary);
     background:
-        linear-gradient(180deg, rgba(217, 255, 230, 0.55) 0%, rgba(211, 199, 255, 0.35) 100%),
+        linear-gradient(180deg, rgba(7, 11, 22, 0.72) 0%, rgba(15, 21, 40, 0.78) 55%, rgba(88, 28, 68, 0.45) 100%),
         url('port1.jpg') center / cover no-repeat fixed;
     min-height: 100vh;
 }
@@ -45,7 +45,7 @@ h3 {
 
 h2 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
-    color: var(--blue);
+    color: var(--cyan);
 }
 
 p {
@@ -105,8 +105,14 @@ section {
 
 .btn-secondary {
     background: transparent;
-    color: var(--text-muted);
-    border-color: rgba(42, 40, 88, 0.25);
+    color: var(--silver);
+    border-color: rgba(103, 232, 249, 0.35);
+}
+
+.btn-secondary:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    background: rgba(103, 232, 249, 0.08);
 }
 
 .btn-secondary:disabled,
@@ -127,21 +133,21 @@ section {
 }
 
 .status--live {
-    background: rgba(148, 255, 175, 0.35);
-    color: #0d5a28;
-    border: 1px solid rgba(148, 255, 175, 0.8);
+    background: rgba(125, 211, 199, 0.22);
+    color: #b8f3e8;
+    border: 1px solid rgba(125, 211, 199, 0.55);
 }
 
 .status--external {
-    background: rgba(95, 242, 255, 0.25);
-    color: #0a4f57;
-    border: 1px solid rgba(95, 242, 255, 0.65);
+    background: rgba(103, 232, 249, 0.18);
+    color: #b8f4ff;
+    border: 1px solid rgba(103, 232, 249, 0.5);
 }
 
 .status--archived {
-    background: rgba(211, 199, 255, 0.45);
-    color: #4a2f72;
-    border: 1px solid rgba(218, 184, 255, 0.8);
+    background: rgba(184, 166, 255, 0.2);
+    color: #ddd0ff;
+    border: 1px solid rgba(184, 166, 255, 0.45);
 }
 
 .reveal {

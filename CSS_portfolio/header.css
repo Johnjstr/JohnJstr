@@ -5,7 +5,7 @@
     align-items: center;
     padding: var(--space-xl) var(--space-md);
     background:
-        linear-gradient(135deg, rgba(25, 21, 255, 0.88) 0%, rgba(255, 26, 228, 0.55) 52%, rgba(10, 8, 51, 0.92) 100%),
+        linear-gradient(145deg, rgba(7, 11, 22, 0.82) 0%, rgba(30, 58, 110, 0.55) 42%, rgba(136, 40, 90, 0.5) 72%, rgba(7, 11, 22, 0.88) 100%),
         url('portfolio2.jpg') center / cover no-repeat;
     color: var(--text-on-dark);
 }
@@ -21,8 +21,8 @@
     margin-bottom: var(--space-sm);
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
-    background: rgba(95, 242, 255, 0.14);
-    border: 1px solid rgba(95, 242, 255, 0.45);
+    background: rgba(103, 232, 249, 0.12);
+    border: 1px solid rgba(103, 232, 249, 0.4);
     color: var(--cyan);
     font-size: 0.8125rem;
     font-weight: 600;
